@@ -20,6 +20,12 @@
 		6A124CAC160B49C6005C462C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A124C8D160B49C6005C462C /* Foundation.framework */; };
 		6A124CB4160B49C6005C462C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A124CB2160B49C6005C462C /* InfoPlist.strings */; };
 		6A124CB7160B49C6005C462C /* iPodPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A124CB6160B49C6005C462C /* iPodPlayerTests.m */; };
+		6A124CC6160B4A02005C462C /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A124CC1160B4A02005C462C /* pause.png */; };
+		6A124CC7160B4A02005C462C /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A124CC2160B4A02005C462C /* play.png */; };
+		6A124CC8160B4A02005C462C /* proximo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A124CC3160B4A02005C462C /* proximo.png */; };
+		6A124CC9160B4A02005C462C /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A124CC4160B4A02005C462C /* stop.png */; };
+		6A124CCA160B4A02005C462C /* voltar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A124CC5160B4A02005C462C /* voltar.png */; };
+		6A124CCC160B4CF2005C462C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A124CCB160B4CF2005C462C /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,12 @@
 		6A124CB3160B49C6005C462C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A124CB5160B49C6005C462C /* iPodPlayerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iPodPlayerTests.h; sourceTree = "<group>"; };
 		6A124CB6160B49C6005C462C /* iPodPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPodPlayerTests.m; sourceTree = "<group>"; };
+		6A124CC1160B4A02005C462C /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		6A124CC2160B4A02005C462C /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		6A124CC3160B4A02005C462C /* proximo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proximo.png; sourceTree = "<group>"; };
+		6A124CC4160B4A02005C462C /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		6A124CC5160B4A02005C462C /* voltar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voltar.png; sourceTree = "<group>"; };
+		6A124CCB160B4CF2005C462C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A124CCC160B4CF2005C462C /* MediaPlayer.framework in Frameworks */,
 				6A124C8C160B49C6005C462C /* UIKit.framework in Frameworks */,
 				6A124C8E160B49C6005C462C /* Foundation.framework in Frameworks */,
 				6A124C90160B49C6005C462C /* CoreGraphics.framework in Frameworks */,
@@ -81,6 +94,7 @@
 		6A124C7C160B49C5005C462C = {
 			isa = PBXGroup;
 			children = (
+				6A124CCB160B4CF2005C462C /* MediaPlayer.framework */,
 				6A124C91160B49C6005C462C /* iPodPlayer */,
 				6A124CAF160B49C6005C462C /* iPodPlayerTests */,
 				6A124C8A160B49C6005C462C /* Frameworks */,
@@ -114,6 +128,7 @@
 				6A124C9A160B49C6005C462C /* PrincipalAppDelegate.h */,
 				6A124C9B160B49C6005C462C /* PrincipalAppDelegate.m */,
 				6A124C9D160B49C6005C462C /* MainStoryboard.storyboard */,
+				6A124CC0160B4A02005C462C /* botoes_player */,
 				6A124CA0160B49C6005C462C /* PrincipalViewController.h */,
 				6A124CA1160B49C6005C462C /* PrincipalViewController.m */,
 				6A124C92160B49C6005C462C /* Supporting Files */,
@@ -149,6 +164,18 @@
 				6A124CB2160B49C6005C462C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A124CC0160B4A02005C462C /* botoes_player */ = {
+			isa = PBXGroup;
+			children = (
+				6A124CC1160B4A02005C462C /* pause.png */,
+				6A124CC2160B4A02005C462C /* play.png */,
+				6A124CC3160B4A02005C462C /* proximo.png */,
+				6A124CC4160B4A02005C462C /* stop.png */,
+				6A124CC5160B4A02005C462C /* voltar.png */,
+			);
+			path = botoes_player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +252,11 @@
 			files = (
 				6A124C96160B49C6005C462C /* InfoPlist.strings in Resources */,
 				6A124C9F160B49C6005C462C /* MainStoryboard.storyboard in Resources */,
+				6A124CC6160B4A02005C462C /* pause.png in Resources */,
+				6A124CC7160B4A02005C462C /* play.png in Resources */,
+				6A124CC8160B4A02005C462C /* proximo.png in Resources */,
+				6A124CC9160B4A02005C462C /* stop.png in Resources */,
+				6A124CCA160B4A02005C462C /* voltar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
